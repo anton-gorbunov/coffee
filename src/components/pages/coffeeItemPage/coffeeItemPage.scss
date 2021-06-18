@@ -1,0 +1,36 @@
+.coffeeItemPage {
+    padding:70px 0 30px 0;
+    &__wrapper {
+        justify-content: center;
+        display:grid;
+        grid-template-columns: 392px 418px;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        column-gap:55px;
+    }
+    &__img {
+        width:100%;
+        align-self: center;
+    }
+    &__title {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    &__country {
+        margin-top: 25px;
+    }
+    &__descr {
+        margin-top: 16px;
+    }
+    &__price {
+        margin-top: 16px;
+        font-weight: 700;
+    }
+    &__bold {
+        font-weight: 700;
+    }
+    &__fz30 {
+        font-size: 26px;
+    }
+}

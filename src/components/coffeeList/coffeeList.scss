@@ -1,0 +1,13 @@
+.coffeeList {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,220px);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    column-gap:70px;
+    row-gap:60px;
+    justify-content: center;
+}

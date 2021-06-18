@@ -1,0 +1,10 @@
+.pleasure {
+    min-height:260px;
+    padding-top: 130px;
+    background: url(./first_bg.png) center center / cover no-repeat;
+    &__title {
+        text-align: center;
+        color:#fff;
+        font-size: 40px;
+    }
+}

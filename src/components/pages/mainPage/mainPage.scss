@@ -1,0 +1,80 @@
+.promo{
+    padding-top: 181px;
+    min-height:640px;
+    background: url(./main_bg.jpg) center center / cover no-repeat;
+    &__title {
+        font-size: 40px;
+        text-align: center;
+        color:#fff;
+    }
+    &__line {
+        background-color: #fff;
+    }
+    &__subtitle {
+        margin-top: 25px;
+        text-align: center;
+        color:#fff;
+        font-size: 24px;
+        line-height: 55px;
+    }
+    &__link {
+        display: block;
+        margin: 0 auto;
+        width:120px;
+        height:30px;
+        margin-top: 16px;
+        padding:4px;
+        text-align: center;
+        color:#fff;
+        border:1px solid #fff;
+        font-size: 14px;
+        border-radius: 3px;
+        &:hover {
+            color:#fff;
+            text-decoration: none;
+        }
+    }
+}
+.about {
+    padding: 80px 0 101px 0;
+    &__title {
+        margin-top: 0;
+        text-align: center;
+        font-size: 24px;
+    }
+    &__text {
+        margin:40px auto 0 auto;
+        width:590px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+.best {
+    min-height:495px;
+    padding-top:80px;
+    padding-bottom: 80px;
+    background: url(./mask_group.jpg) center center / cover no-repeat;
+    &__title {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+.divider {
+    width:200px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line {
+    width:60px;
+    height:1px;
+    &_black{
+        background-color: #000;
+    }
+    &_240 {
+        width:240px;
+        margin: 0 auto;
+    }
+}

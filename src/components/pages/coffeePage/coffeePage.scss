@@ -1,0 +1,110 @@
+.coffee {
+    min-height:260px;
+    padding-top: 130px;
+    background: url('./first_bg.jpg') center center / cover no-repeat;
+    &__title {
+        margin-bottom: 0;
+        text-align: center;
+        color:#fff;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+.aboutOur {
+    padding-top: 60px;
+    &__wrapper {
+        width:700px;
+        margin: 0 auto 60px auto;
+        display: grid;
+        grid-template-columns: 272px 346px;
+        grid-template-rows: 355px;
+        grid-auto-rows: auto;
+        column-gap: 80px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 24px;
+    }
+    &__text {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+    }
+}
+.goods {
+    padding-top: 60px;
+    &__sort {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 290px 326px;
+        grid-template-rows: 30px;
+        grid-auto-rows: 30px;
+        column-gap: 80px;
+    }
+    &__locate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-title {
+            font-size: 14px;
+        }
+        &-input {
+            width:180px;
+            height: 30px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            padding-left: 40px;
+            padding-bottom: 5px;
+            border:none;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 12px;
+               
+            }
+        }
+    }
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-title {
+            font-size: 14px;
+        }
+        &-menu {
+            width:235px;
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        &-item {
+            font-size: 12px;
+            width:75px;
+            padding:6px 0 6px 0;
+            text-align: center;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 0px;
+            cursor: pointer;
+        }
+    }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        background-color: #fff;
+        border:none;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width:230px;
+        height:30px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
