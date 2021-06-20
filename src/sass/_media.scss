@@ -1,0 +1,161 @@
+@media (max-width: 1200px) {
+    .container {
+        width:960px;
+    }
+}
+@media (max-width:992px) {
+    .container {
+        width:720px;
+    }
+    .coffeeList {
+        grid-template-columns: repeat(2, 220px);
+    }
+    .coffeeItemPage{
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 30px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .container {
+        width:540px;
+    }
+    .promo{
+        &__title {
+            font-size: 32px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
+    .about {
+        &__text {
+            width:unset;
+        }
+    }
+    .aboutOur {
+        &__wrapper {
+            margin-bottom: 40px;
+            width:unset;
+            grid-template-columns: 240px 280px;
+            grid-template-rows: auto;
+            align-items: center;
+            column-gap:20px;
+        }
+        &__text {
+            line-height: 22px;
+            margin-top: 10px;
+        }
+        &__img {
+            width:100%;
+        }
+        &__paragraph {
+            margin-bottom: 0;
+        }
+    }
+    .goods {
+        &__sort {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+        &__locate, &__filter {
+           padding:0px 50px;
+        }
+    }
+    .coffeeItemPage {
+        padding-top: 50px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__img {
+            width:400px;
+            justify-self: center;
+        }
+        &__title {
+            margin-top: 30px;
+        }
+    }
+    .divider {
+        margin: 5px auto 0 auto;
+    }
+}
+@media (max-width:576px) {
+    .container {
+        width:100%;
+        padding:0 15px;
+    }
+    .promo {
+        &__subtitle {
+            line-height: 34px;
+        }
+    }
+    .best {
+        padding: 50px 0;
+    }
+    .coffeeList {
+        grid-template-columns: 220px;
+    }
+    .aboutOur {
+        &__wrapper { 
+            grid-template-columns: 1fr;
+        }
+        &__title {
+            margin-top: 20px;
+        }
+        &__img {
+            width:272px;
+            justify-self: center;
+        }
+    }
+    .goods {
+        &__sort {
+            grid-template-rows: auto;
+            grid-auto-rows: auto;
+        }
+        &__filter, &__locate {
+            padding: 0;
+        }
+        &__filter-menu {
+            flex-wrap: wrap;
+            width:200px;
+            justify-content: space-around;
+        }
+        &__filter-item {
+            margin-bottom: 10px;
+        }
+    }
+    .menu {
+        width:unset;
+        flex-wrap: wrap;
+        width:200px;
+        justify-content: space-around;
+        .menu__item {
+            margin-bottom: 10px;
+        }
+    }
+    .header-menu {
+        width:100%;
+       left:50%;
+       transform: translateX(-50%);
+    }
+    .coffeeItemPage {
+        &__img {
+            width:100%;
+        }
+    }
+    .coffee {
+        padding-top: 100px;
+        min-height: 230px;
+        &__title {
+            font-size: 30px;
+        }
+    }
+    .pleasure {
+        padding-top: 100px;
+        min-height: 230px;
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
