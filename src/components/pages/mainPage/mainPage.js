@@ -1,34 +1,23 @@
 import React from 'react';
 import CoffeeList from '../../coffeeList/coffeeList';
+import useLoadingData from '../../useLoadingData/useLoadingData';
+import Spinner from '../../spinner/spinner';
+import Divider from '../../divider/divider';
 
 import './mainPage.scss';
 
 const MainPage = () => {
+    const {items, loading} = useLoadingData();
+    const filteredItems = items.filter(item => item.category === 'best');
+    if (loading) {
+        return <Spinner/>
+    }
     return (
         <>
-            <section className="promo">
-                <div className="container">
-                    <h1 className="promo__title">Everything You Love About Coffee</h1>
-                    <div className="divider">
-                        <div className="promo__line line"></div>
-                        <img src="icons/beans/white_beans.png" alt="beans"/>
-                        <div className="promo__line line"></div>
-                    </div>
-                    <h2 className="promo__subtitle">
-                        We makes every day full of energy and taste <br/>
-                        Want to try our beans?
-                    </h2>
-                    <a href="#" className="promo__link">More</a>
-                </div>
-            </section>
             <section className="about">
                 <div className="container">
                     <h2 className="about__title">About Us</h2>
-                    <div className="divider">
-                        <div className="about__line line line_black"></div>
-                        <img src="icons/beans/black_beans.png" alt="beans"/>
-                        <div className="about__line line line_black"></div>
-                    </div>
+                    <Divider classList="line line_black"/>
                     <div className="about__text">
                         <p className="about__pragraph">
                             Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
@@ -51,7 +40,7 @@ const MainPage = () => {
             <section className="best">
                 <div className="container">
                     <h2 className="best__title">Our best</h2>
-                    <CoffeeList/>
+                    <CoffeeList coffeeItems={filteredItems}/>
                 </div>
             </section>
         </>

@@ -1,0 +1,166 @@
+{
+	"coffee": [
+		{
+			"title": "Vesuvius",
+			"price": 9,
+			"url": "icons/products/brazil.png",
+			"country": "Brazil",
+			"category":"main",
+            "description": "VESUVIUS coffee beans: coffee made from high-quality selected beans of the darkest, Italian roasting: the beans are roasted until a dark brown hue and a slightly oily surface appears. This is how the expressive, slightly tart taste of Vesuvius coffee beans is born. Vesuvius grain coffee is suitable for any method of preparation: in coffee makers, turks and for brewing in a cup. It goes well with milk, cream and cinnamon.",
+            "id": 1
+		},
+		{
+			"title": "GURME",
+			"price": 10,
+			"url": "icons/products/columbia.png",
+			"country": "Columbia",
+			"category":"main",
+            "description": "Gourmet Italiano Busto-coffee for lovers of a strong and invigorating drink. Thanks to the dry processing that the grains undergo, the drinks prepared on the basis of this mixture have a thick and rich taste. The delicate shade of hazelnuts and bitter chocolate in the taste will give an additional piquancy to your drink.",
+			"id": 2
+		},
+		{
+			"title": "Lavazza Qualita Oro",
+			"price": 11,
+			"url": "icons/products/columbia.png",
+			"country": "Columbia",
+			"category":"main",
+            "description": "Qualita Oro-a combination of 6 varieties of Arabica beans from the best areas of Central and South America, expertly grown and perfectly combined. The perfect symphony for excellent taste every time since 1956.",
+			"id": 3
+		},
+		{
+			"title": "Ambassador Adora",
+			"price": 7,
+			"url": "icons/products/brazil.png",
+			"country": "Brazil",
+			"category":"main",
+            "description": "AMBASSADOR Adora natural roasted coffee is a classic of the coffee genre with its inherent qualities: perfectly balanced taste, pleasant bitterness, exciting bright aroma, thick texture. The original composition of Adora coffee is created from dark roasted beans. It has a rich, rich taste with a slight nutty tint in the aftertaste.",
+			"id": 4
+		},
+		{
+			"title": "Almafood Altaroma Crema",
+			"price": 15,
+			"url": "icons/products/kenya.png",
+			"country": "Kenya",
+			"category":"main",
+            "description": "A specially selected blend of coffee beans for vending machines has a strong aroma, rich taste and a gentle foam. Dark roasting gives the coffee drink the taste shades of bitter chocolate and roasted cocoa beans. An invigorating taste with a long aftertaste. A luxurious, dense cream is the hallmark of this coffee, which gave the name to the blend.",
+			"id":5
+		},
+        {
+			"title": "ICS Budjet ",
+			"price": 7,
+			"url": "icons/products/kenya.png",
+			"country": "Kenya",
+			"category":"main",
+            "description": "Natural roasted coffee beans from ICS for the vending business, Horeca segment and home use. An intense blend of carefully selected best Robusta varieties has a dense taste with hints of spices, a stable foam and a good aftertaste.",
+			"id":6
+		},
+        {
+			"title": "Solimo Coffee Beans 2 kg",
+			"price": 10.73,
+			"url": "icons/products/cameroon.png",
+			"country": "Cameroon",
+            "category":"best",
+            "description": "A blend of the best Arabica and strong Robusta coffee varieties with a sweet taste and rich aroma. The predominance of robusta will give you a delicious coffee with a slight hint of acidity, provides a powerful charge of caffeine with a range of unsurpassed flavors: coffee trail, aromatic hints of toasted bread, fruity, spicy notes and intense aroma of cocoa. A noticeable cocoa aftertaste, reminiscent of dark chocolate.",
+			"id":7
+		},
+        {
+			"title": "Presto Coffee Beans 1 kg",
+			"price": 15.99,
+			"url": "icons/products/india.png",
+			"country": "India",
+            "category":"best",
+            "description": "Boasi Linea Professional – a line of coffee blends for business: vending coffee machines and the HoReCa segment.Natural roasted coffee beans Boasi Linea Professional Gran Caffe 1 kg-a blend of Arabica and Robusta beans from the best plantations in Brazil and Vietnam. A full-featured blend with a rich and intense flavor, with an excellent creamy consistency.",
+			"id":8
+		},
+        {
+			"title": "AROMISTICO Coffee 1 kg",
+			"price": 12,
+			"url": "icons/products/brazil.png",
+			"country": "Brazil",
+            "category": "best",
+            "description": "Arabica fruttata con note di cioccolato (fruit arabica with a chocolate note).Balanced taste with a pleasant light bitterness and sourness of Arabica. The main distinguishing feature is the juicy sourness of the characteristic coffee",
+			"id":9
+		},
+        {
+			"title": "DeMarco Fresh Roast Vending",
+			"price": 13,
+			"url": "icons/products/columbia.png",
+			"country": "Columbia",
+			"category":"main",
+            "description": "Grandly combined South American Arabica and African robusta, which in combination give rise to a multi-faceted taste. A blend that gives a fairly strong coffee with a tart, slightly bitter taste with hints of chocolate and a neutral aftertaste. It is distinguished by a subtle, only its inherent spicy aroma. This blend is created specifically for the preparation of espresso in coffee machines of any type.",
+			"id":10
+		},
+		{
+			"title": "Espresso Pocos De Caldas",
+			"price": 8,
+			"url": "icons/products/columbia.png",
+			"country": "Columbia",
+			"category":"main",
+            "description": "Classic espresso-a mixture of medium-roasted grains. Our recipe uses five different names of coffee beans of geographical origin, which makes the taste balanced and constant. The blend of Espresso Pocos De Caldas gives the drink a dense body and a good foam. It has a long aftertaste, which combines strength and noble sourness.",
+			"id":11
+		},
+		{
+			"title": "Papa Juan Fazenda",
+			"price": 9,
+			"url": "icons/products/kenya.png",
+			"country": "Kenya",
+			"category":"main",
+            "description": "Papa Juan Fazenda - a mixture of medium-roasted Arabica beans. It consists of high-altitude Arabica coffee beans brought from five countries of origin. Thanks to its complex composition, this coffee has a stable, balanced taste with notes of dark chocolate and exotic fruits. It has a floral aroma and a noble sourness.",
+			"id":12
+		},
+		{
+			"title": "Papa Rich",
+			"price": 11,
+			"url": "icons/products/brazil.png",
+			"country": "Brazil",
+			"category":"main",
+            "description": "Papa Rich is a professional medium-roast coffee blend for making strong and flavorful coffee. It consists of Arabica and robusta beans of four varieties brought from South America, Africa and India. It has a strong taste with a long chocolate aftertaste and a luxurious cream of real espresso. Ideal for making strong coffee drinks in a carob or automatic coffee machine, geyser coffee maker, turk.",
+			"id":13
+		},
+		{
+			"title": "Vending Coffee Blend",
+			"price": 7,
+			"url": "icons/products/kenya.png",
+			"country": "Kenya",
+			"category":"main",
+            "description": "This professional coffee blend of medium-roasted beans is specially developed by us for use in high-capacity coffee machines. It combines a bright aroma, balanced taste and strength of the drink. It consists of four types of Arabica and robusta coffee beans from large commercial plantations in South America, Africa and India. This allows us to ensure the consistent quality and purity of the product, which is so valued by our customers.",
+			"id":14
+		},
+		{
+			"title": "Uganda Sipi Falls Organic",
+			"price": 16,
+			"url": "icons/products/columbia.png",
+			"country": "Columbia",
+			"category":"main",
+            "description": "Our product is freshly roasted coffee Mr. Brown Specialty Coffee Uganda Sipi Falls Organic consists of 100% selected grains of African Arabica Uganda Sipi Falls Organic - aromatic Arabica from Uganda. The sweet and balanced taste of this coffee will delight you with light notes of nuts, tropical fruits combined with the sweetness of orange and floral honey.",
+			"id":15
+		},
+		{
+			"title": "Papua New Guinea",
+			"price": 13,
+			"url": "icons/products/brazil.png",
+			"country": "Brazil",
+			"category":"main",
+            "description": "Roasted monosort coffee, 100% consisting of selected Arabica beans Papua New Guinea Sigri - a monosort from Oceania, which grows at an altitude of more than 1500 meters above sea level. Papua New Guinea Sigri is a bright and clean coffee with pleasant berry notes.",
+			"id":16
+		},
+		{
+			"title": "Pure Arabica",
+			"price": 9,
+			"url": "icons/products/kenya.png",
+			"country": "Kenya",
+			"category":"main",
+            "description": "Our company offers you to buy nechaev pure arabica coffee beans of fresh roasting 500g on the best conditions. The site contains all the necessary information about the product – prices, stock availability and description. Sale of nechaev pure arabica coffee beans of fresh roasting 500g is carried out with delivery or on the terms of pickup from the warehouse nearest to you.",
+			"id":17
+		},
+		{
+			"title": "Uganda Sipi Falls Organic",
+			"price": 8,
+			"url": "icons/products/brazil.png",
+			"country": "Brazil",
+			"category":"main",
+            "description": "Coffee is natural organic, 100% consisting of selected Arabica beans Uganda Sipi Falls Organic. A very interesting organic monosort that grows on the border between Uganda and Kenya at an altitude of 1600-1900 meters above sea level. In taste, it combines the characteristics of coffee from two countries at once. Special coffee Uganda Sipi Falls has a sweet and balanced taste. It will delight you with light notes of nuts, tropical fruits combined with the sweetness of orange and floral honey.",
+			"id":18
+		}
+    ]
+}

@@ -1,0 +1,21 @@
+.divider {
+    width:200px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line {
+    width:60px;
+    height:1px;
+    &_white {
+        background-color: #fff;
+    }
+    &_black{
+        background-color: #000;
+    }
+    &_240 {
+        width:240px;
+        margin: 0 auto;
+    }
+}

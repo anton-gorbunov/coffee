@@ -31,16 +31,29 @@
         line-height: 28px;
         text-align: center;
     }
+    &__button {
+        display: block;
+        margin: 0 auto;
+        background-color: #fff;
+        border:none;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        width:230px;
+        height:30px;
+        &:focus {
+            outline: none;
+        }
+    }
 }
 .goods {
     padding-top: 60px;
     &__sort {
         justify-content: center;
         display: grid;
-        grid-template-columns: 290px 326px;
+        grid-template-columns: 290px 366px;
         grid-template-rows: 30px;
         grid-auto-rows: 30px;
-        column-gap: 80px;
+        column-gap: 60px;
     }
     &__locate {
         display: flex;
@@ -75,7 +88,7 @@
             font-size: 14px;
         }
         &-menu {
-            width:235px;
+            width:280px;
             list-style-type: none;
             padding-left: 0;
             display: flex;
@@ -85,26 +98,18 @@
         }
         &-item {
             font-size: 12px;
-            width:75px;
+            width:65px;
             padding:6px 0 6px 0;
             text-align: center;
             background: #FFFFFF;
             box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
             border-radius: 0px;
             cursor: pointer;
+            &_active {
+                color:#fff;
+                background-color:#B5B5B5;
+            }
         }
     }
-    &__button {
-        display: block;
-        margin: 0 auto;
-        background-color: #fff;
-        border:none;
-        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        width:230px;
-        height:30px;
-        &:focus {
-            outline: none;
-        }
-    }
+    
 }

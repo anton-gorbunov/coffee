@@ -3,18 +3,17 @@ import CoffeeItem from '../coffeeItem/coffeeItem';
 
 import './coffeeList.scss';
 
-const CoffeeList = () => {
+const CoffeeList = ({coffeeItems}) => {
+    const items = coffeeItems.map(item => {
+        return (
+            <li key={item.id} className="coffeeList__item">
+                <CoffeeItem items= {item}/>
+            </li>
+        );
+    });
     return (
         <ul className="coffeeList">
-            <li className="coffeeList__item">
-                <CoffeeItem/>
-            </li>
-            <li className="coffeeList__item">
-                <CoffeeItem/>
-            </li>
-            <li className="coffeeList__item">
-                <CoffeeItem/>
-            </li>
+            {items}
         </ul>
     );
 };

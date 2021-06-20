@@ -1,34 +1,36 @@
 import React from 'react';
+import useLoadingData from '../../useLoadingData/useLoadingData';
+import Spinner from '../../spinner/spinner';
+import Divider from '../../divider/divider';
 
 import './coffeeItemPage.scss';
 
-const CoffeeItemPage = () => {
+const CoffeeItemPage = ({match}) => {
+    const {loading, items} = useLoadingData();
+    if (loading) {
+        return (
+            <Spinner/>
+        );
+    }
+    const item = items.find(item => item.id === +match.params.id);
+    const {title, url, country, description, price} = item;
     return (
         <>
-            <section className="coffee">
-                <div className="container">
-                    <h2 className="coffee__title">Our Coffee</h2>
-                </div>
-            </section>
             <section className="coffeeItemPage">
                 <div className="container">
                     <div className="coffeeItemPage__wrapper">
-                        <img className="coffeeItemPage__img" src="icons/coffeeItem.jpg"alt="coffeeItem"/>
+                        <img className="coffeeItemPage__img" src={url}alt="coffeeItem"/>
                         <div className="coffeeItemPage__text">
-                            <h2 className="coffeeItemPage__title">About it</h2>
-                            <div className="divider">
-                                <div className="line line_black"></div>
-                                <img src="icons/beans/black_beans.png" alt="beans"/>
-                                <div className="line line_black"></div>
-                            </div>
+                            <h2 className="coffeeItemPage__title">{title}</h2>
+                            <Divider classList="line line_black"/>
                             <div className="coffeeItemPage__country">
-                                <span className="coffeeItemPage__bold">Country</span>: Brasil
+                                <span className="coffeeItemPage__bold">Country</span>: {country}
                             </div>
                             <div className="coffeeItemPage__descr">
-                            <span className="coffeeItemPage__bold">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <span className="coffeeItemPage__bold">Description: </span> {description}
                             </div>
                             <div className="coffeeItemPage__price">
-                                Price: <span className="coffeeItemPage__fz30">16.99$</span>
+                                Price: <span className="coffeeItemPage__fz30">{`${price}$`}</span>
                             </div>
                         </div>
                     </div>
@@ -36,6 +38,6 @@ const CoffeeItemPage = () => {
             </section>
         </>
     );
-};
+}
 
 export default CoffeeItemPage;

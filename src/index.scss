@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
-@import './bootstrap-reboot.min';
+@import './sass/bootstrap-reboot.min';
 
 * {
   font-family: 'Merienda', cursive;
@@ -10,3 +10,8 @@
   margin: 0 auto;
   position: relative;
 }
+#root {
+  min-height: 800px;
+}
+
+@import './sass/media';

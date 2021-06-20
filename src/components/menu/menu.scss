@@ -14,6 +14,9 @@
             text-decoration: none;
         }
     }
+    &__fixed {
+        display: none;
+    }
 }
 .header-menu {
     position:absolute;
