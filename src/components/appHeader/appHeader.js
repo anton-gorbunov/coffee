@@ -1,5 +1,5 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 import Menu from '../menu/menu';
 import Divider from '../divider/divider';
 
@@ -18,7 +18,7 @@ const AppHeader = ({location}) => {
                         We makes every day full of energy and taste <br/>
                         Want to try our beans?
                     </h2>
-                    <a href="#" className="promo__link">More</a>
+                    <Link to="/coffee" className="promo__link">More</Link>
                 </div>
             </section>
             </>

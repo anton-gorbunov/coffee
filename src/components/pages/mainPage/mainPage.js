@@ -1,17 +1,21 @@
 import React from 'react';
 import CoffeeList from '../../coffeeList/coffeeList';
-import useLoadingData from '../../useLoadingData/useLoadingData';
+import useLoadingData from '../../hooks/useLoadingData';
 import Spinner from '../../spinner/spinner';
 import Divider from '../../divider/divider';
+import Error from '../../error/error';
 
 import './mainPage.scss';
 
 const MainPage = () => {
-    const {items, loading} = useLoadingData();
-    const filteredItems = items.filter(item => item.category === 'best');
+    const {items, loading, error} = useLoadingData('http://myjson.dit.upm.es/api/bins/1pza');
     if (loading) {
         return <Spinner/>
     }
+    if (error) {
+        return <Error/>
+    }
+    const filteredItems = items.coffee.filter(item => item.category === 'best');
     return (
         <>
             <section className="about">

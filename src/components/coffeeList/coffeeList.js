@@ -7,7 +7,7 @@ const CoffeeList = ({coffeeItems}) => {
     const items = coffeeItems.map(item => {
         return (
             <li key={item.id} className="coffeeList__item">
-                <CoffeeItem items= {item}/>
+                <CoffeeItem items={item}/>
             </li>
         );
     });

@@ -1,18 +1,21 @@
 import React from 'react';
-import useLoadingData from '../../useLoadingData/useLoadingData';
+import useLoadingData from '../../hooks/useLoadingData';
 import Spinner from '../../spinner/spinner';
 import Divider from '../../divider/divider';
-
+import Error from '../../error/error';
 import './coffeeItemPage.scss';
 
 const CoffeeItemPage = ({match}) => {
-    const {loading, items} = useLoadingData();
+    const {loading, items, error} = useLoadingData('http://myjson.dit.upm.es/api/bins/1pza');
     if (loading) {
         return (
             <Spinner/>
         );
     }
-    const item = items.find(item => item.id === +match.params.id);
+    if (error) {
+        return <Error/>
+    }
+    const item = items.coffee.find(item => item.id === +match.params.id);
     const {title, url, country, description, price} = item;
     return (
         <>

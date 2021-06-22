@@ -1,23 +1,36 @@
 import React, {useState} from 'react';
 import CoffeeList from '../../coffeeList/coffeeList';
-import useLoadingData from '../../useLoadingData/useLoadingData';
+import useLoadingData from '../../hooks/useLoadingData';
 import Spinner from '../../spinner/spinner'
 import Divider from '../../divider/divider';
+import Error from '../../error/error';
 
 import './coffeePage.scss';
 
 const CoffeePage = () => {
-    const {loading, items} = useLoadingData();
-    const filteredItems = items.filter(item => item.category === 'main');
+    const {loading, items, error} = useLoadingData('http://myjson.dit.upm.es/api/bins/1pza');
     const [filter, setFilter] = useState('all');
     const [search, setSearch] = useState('');
-    const visibleItems = filterItems(filter,serchItems(search, filteredItems))
     const filterArr = [
         {id:1, title: 'all'},
         {id:2, title:'Brazil'},
         {id:3, title:'Kenya'},
         {id:4, title:'Columbia'}
     ];
+    const filterButtons = filterArr.map(item => {
+        const {title, id} = item;
+        const active = filter === title;
+        const classList = active ? 'goods__filter-item_active' : '';
+        return (
+            <li 
+                key={id}
+                className={`goods__filter-item ${classList}`} 
+                onClick={() => setFilter(title)}
+            >
+                {title}
+            </li>
+        );
+    });
     function filterItems(filter, items) {
         if (filter === 'all') {
             return items;
@@ -35,23 +48,14 @@ const CoffeePage = () => {
     function onInputChange(event) {
         setSearch(event.target.value);
     }
-    const filterButtons = filterArr.map(item => {
-        const {title, id} = item;
-        const active = filter === title;
-        const classList = active ? 'goods__filter-item_active' : '';
-        return (
-            <li 
-                key={id}
-                className={`goods__filter-item ${classList}`} 
-                onClick={() => setFilter(title)}
-            >
-                {title}
-            </li>
-        );
-    });
     if (loading) {
         return <Spinner/>
     }
+    if (error) {
+        return <Error/>
+    }
+    const filteredItems = items.coffee.filter(item => item.category === 'main');
+    const visibleItems = filterItems(filter,serchItems(search, filteredItems))
     return (
         <CoffeePageLayout
             buttons={filterButtons}
