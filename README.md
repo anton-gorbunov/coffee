@@ -1,7 +1,7 @@
 # React Coffee App
 
 Test application built with react hooks.
-[http://pulse.web-development2020.com/](view...)
+[view...](http://pulse.web-development2020.com)
 
 ## Built Using
     React.js
